@@ -1,7 +1,7 @@
 # YXCharts
 this chart could be drag
 
- YXCharts/YXChart.gif 
+![image](https://github.com/Gaoyanxiang/YXCharts/blob/master/YXChart.gif)
 
 
 
