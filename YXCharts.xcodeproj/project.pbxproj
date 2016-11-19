@@ -15,6 +15,8 @@
 		2A6C358F1DDC813500EB2128 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A6C358D1DDC813500EB2128 /* LaunchScreen.storyboard */; };
 		2A6C359A1DDC813500EB2128 /* YXChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C35991DDC813500EB2128 /* YXChartsTests.m */; };
 		2A6C35A51DDC813500EB2128 /* YXChartsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C35A41DDC813500EB2128 /* YXChartsUITests.m */; };
+		2A6C35B41DDC815200EB2128 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6C35B31DDC815200EB2128 /* ChartView.m */; };
+		2A7F96A41DDEE65900ED7FAD /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F96A31DDEE65900ED7FAD /* PopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		2A6C35A01DDC813500EB2128 /* YXChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6C35A41DDC813500EB2128 /* YXChartsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXChartsUITests.m; sourceTree = "<group>"; };
 		2A6C35A61DDC813500EB2128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A6C35B21DDC815200EB2128 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
+		2A6C35B31DDC815200EB2128 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
+		2A7F96A21DDEE65900ED7FAD /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		2A7F96A31DDEE65900ED7FAD /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		2A7F96A51DDEE71E00ED7FAD /* YXHelper.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXHelper.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +112,15 @@
 				2A6C35831DDC813500EB2128 /* AppDelegate.m */,
 				2A6C35851DDC813500EB2128 /* ViewController.h */,
 				2A6C35861DDC813500EB2128 /* ViewController.m */,
+				2A6C35B21DDC815200EB2128 /* ChartView.h */,
+				2A6C35B31DDC815200EB2128 /* ChartView.m */,
+				2A7F96A21DDEE65900ED7FAD /* PopView.h */,
+				2A7F96A31DDEE65900ED7FAD /* PopView.m */,
 				2A6C35881DDC813500EB2128 /* Main.storyboard */,
 				2A6C358B1DDC813500EB2128 /* Assets.xcassets */,
 				2A6C358D1DDC813500EB2128 /* LaunchScreen.storyboard */,
 				2A6C35901DDC813500EB2128 /* Info.plist */,
+				2A7F96A51DDEE71E00ED7FAD /* YXHelper.pch */,
 				2A6C357F1DDC813500EB2128 /* Supporting Files */,
 			);
 			path = YXCharts;
@@ -279,6 +291,8 @@
 				2A6C35871DDC813500EB2128 /* ViewController.m in Sources */,
 				2A6C35841DDC813500EB2128 /* AppDelegate.m in Sources */,
 				2A6C35811DDC813500EB2128 /* main.m in Sources */,
+				2A6C35B41DDC815200EB2128 /* ChartView.m in Sources */,
+				2A7F96A41DDEE65900ED7FAD /* PopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,24 +440,36 @@
 		2A6C35AA1DDC813500EB2128 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CEY3Q9D359;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lenwave_ios02/Desktop/YXCharts/YXCharts/YXHelper.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YXCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lenwave.YXCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		2A6C35AB1DDC813500EB2128 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CEY3Q9D359;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lenwave_ios02/Desktop/YXCharts/YXCharts/YXHelper.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YXCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lenwave.YXCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -516,6 +542,7 @@
 				2A6C35AB1DDC813500EB2128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A6C35AC1DDC813500EB2128 /* Build configuration list for PBXNativeTarget "YXChartsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +551,7 @@
 				2A6C35AE1DDC813500EB2128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A6C35AF1DDC813500EB2128 /* Build configuration list for PBXNativeTarget "YXChartsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +560,7 @@
 				2A6C35B11DDC813500EB2128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,48 @@
+//
+//  YXHelper.pch
+//  YXCharts
+//
+//  Created by lenwave_IOS02 on 16/11/18.
+//  Copyright © 2016年 高砚祥. All rights reserved.
+//
+
+#ifndef YXHelper_pch
+#define YXHelper_pch
+
+
+
+
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define HomePage_Color  UIColorFromRGB(0x54bcf9)//首页导航主色
+
+
+#define SpaceX 50
+
+
+
+#define Triangle_W 8     //尖角的底边长
+#define Triangle_A M_PI/3  //尖角底角大小
+
+
+
+
+
+#define TEXT_COLOR_BLACK_30  [UIColor colorWithRed:0 green:0 blue:0 alpha:.13]
+
+
+
+
+
+#define Top_Block 30  //画出了的线最高点距离上方的距离
+
+#define Total_Hight 100  // chartView 中 划线高度
+
+
+#define Dog_R 4
+
+
+
+#endif /* YXHelper_pch */
