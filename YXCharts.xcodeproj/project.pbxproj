@@ -445,7 +445,7 @@
 				DEVELOPMENT_TEAM = CEY3Q9D359;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/lenwave_ios02/Desktop/YXCharts/YXCharts/YXHelper.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YXCharts/YXHelper.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YXCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -463,7 +463,7 @@
 				DEVELOPMENT_TEAM = CEY3Q9D359;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/lenwave_ios02/Desktop/YXCharts/YXCharts/YXHelper.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YXCharts/YXHelper.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YXCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
